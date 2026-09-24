@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Spendora — Personal budgeting, on your device</title>
+<meta name="description" content="Spendora is a personal finance and budgeting app that keeps your data on your device. Track income, expenses, budgets, and goals — no account required." />
+<link rel="icon" href="icon-180.png" />
+<style>
+  :root {
+    --brand: #0E7A38;
+    --brand-dark: #0a5c2a;
+    --bg: #F6F8F6;
+    --card: #FFFFFF;
+    --text: #1A2420;
+    --muted: #5B6B62;
+    --border: #E4EAE5;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+  }
+  a { color: var(--brand); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+
+  header.hero {
+    padding: 64px 0 48px;
+    text-align: center;
+  }
+  .logo {
+    width: 88px;
+    height: 88px;
+    border-radius: 22px;
+    box-shadow: 0 8px 24px rgba(14,122,56,0.18);
+  }
+  h1 {
+    font-size: 34px;
+    margin: 24px 0 8px;
+    letter-spacing: -0.02em;
+  }
+  .tagline {
+    font-size: 18px;
+    color: var(--muted);
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  .badges {
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--text);
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .badge.secondary {
+    background: transparent;
+    color: var(--text);
+    border: 1px solid var(--border);
+  }
+
+  section.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding: 8px 0 56px;
+  }
+  @media (max-width: 640px) {
+    section.features { grid-template-columns: 1fr; }
+  }
+  .feature {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 22px;
+  }
+  .feature h3 {
+    font-size: 16px;
+    margin: 0 0 8px;
+  }
+  .feature p {
+    font-size: 14px;
+    color: var(--muted);
+    margin: 0;
+  }
+
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 28px 0 48px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+  }
+  footer a { color: var(--muted); text-decoration: underline; }
+  footer .links { margin-bottom: 8px; }
+  footer .links a { margin: 0 8px; color: var(--text); text-decoration: none; font-weight: 600; }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #10140F;
+      --card: #171D16;
+      --text: #EAF2EA;
+      --muted: #9AAE9F;
+      --border: #263129;
+    }
+    .badge.secondary { color: var(--text); }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <img class="logo" src="icon-512.png" alt="Spendora app icon" />
+      <h1>Spendora</h1>
+      <p class="tagline">See where every dollar goes. Track income, expenses, budgets, and goals — with your data kept on your own device.</p>
+      <div class="badges">
+        <!-- TODO: replace # with your real App Store link, e.g. https://apps.apple.com/app/idXXXXXXXXXX -->
+        <a class="badge" href="#" target="_blank" rel="noopener">Download on the App Store</a>
+        <a class="badge secondary" href="privacy.html">Privacy Policy</a>
+      </div>
+    </header>
+
+    <section class="features">
+      <div class="feature">
+        <h3>See where every dollar goes</h3>
+        <p>Track income, expenses, budgets, and goals in one place — across every wallet you use.</p>
+      </div>
+      <div class="feature">
+        <h3>Budgets that actually warn you</h3>
+        <p>Get notified before you overspend, not after — with clear on-track, warning, and over-budget states.</p>
+      </div>
+      <div class="feature">
+        <h3>Your data stays on this device</h3>
+        <p>No account needed to start. Cloud backup is optional if you sign in. Free to use, supported by ads.</p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="mailto:hoanlk.dev@gmail.com">Contact</a>
+      </div>
+      &copy; 2026 Spendora. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
